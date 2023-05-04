@@ -1,0 +1,336 @@
+/* Estilo general */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap; /* Añade esta línea */
+}
+
+header img {
+    max-width: 150px;
+    margin-right: 1rem;
+    flex: 1; /* Añade esta línea */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 2; /* Añade esta línea */
+}
+
+nav ul li {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.3rem 0.6rem; /* Añade padding para aumentar el área de los botones */
+    border-radius: 3px; /* Añade bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.2); /* Añade un fondo oscuro con transparencia */
+    transition: background-color 0.3s; /* Añade una transición suave para los cambios de fondo */
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2); /* Cambia el fondo al pasar el cursor por encima */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Tus estilos... */
+
+    footer > div {
+        margin-bottom: 1rem;
+    }
+
+    header img {
+        max-width: 100px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        margin-right: 0.5rem; /* Reduce el margen a la derecha */
+    }
+
+    nav ul li {
+        margin-right: 0.5rem; /* Reduce el margen a la derecha para adaptarse a pantallas más pequeñas */
+    }
+
+    nav a {
+        font-size: 0.8rem; /* Reduce el tamaño de fuente para adaptarse a pantallas más pequeñas */
+        padding: 0.2rem 0.4rem; /* Reduce el padding para adaptarse a pantallas más pequeñas */
+    }
+}
+
+/* Banner */
+.hero-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.hero-image h2 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1rem;
+}
+
+/* Categorías */
+.categorias {
+    padding: 2rem 1rem;
+}
+
+.cards ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.cards li {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 1rem;
+    max-width: 30%;
+    flex-basis: 30%;
+    box-sizing: border-box;
+}
+
+.cards img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.vermas {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.vermas:hover {
+    background-color: #555;
+}
+
+/* Video gaming */
+.video-gaming {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/* CTA */
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.cta h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+footer ul li a:hover {
+    color: #ccc;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Tus estilos... */
+
+    footer>div {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Estilos para la sección de benchmark */
+.benchmark-container {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benchmark-container h3 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.benchmark-text {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.benchmark-video {
+    flex: 1;
+    max-width: 45%;
+    position: relative;
+    padding-bottom: 25.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+}
+
+.benchmark-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    /* Tus estilos... */
+
+    footer>div {
+        margin-bottom: 1rem;
+    }
+
+    .benchmark-container {
+        flex-direction: column;
+    }
+
+    .benchmark-text,
+    .benchmark-video {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    .benchmark-video {
+        padding-bottom: 56.25%; /* Proporción 16:9 */
+    }
+}
+
+/* Estilos para la sección de Google Maps */
+.ubicacion {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.map-container {
+    max-width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 */
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Ajustes para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .ubicacion {
+        font-size: 20px;
+    }
+
+    .map-container {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para los títulos de las secciones */
+section h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 3px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Cambiar el color de las tarjetas al pasar el cursor por encima */
+.cards li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
